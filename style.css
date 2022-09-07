@@ -1,0 +1,181 @@
+html {
+    font-size: 62.5%; }
+  
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box; }
+  
+  body {
+    font-family: "Rubik", sans-serif;
+    font-size: 1.6rem;
+    background-color: #f5f3f7;
+    line-height: 1.4; }
+  
+  .content-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem; }
+  
+  .mobile {
+    margin-top: 5rem;
+    max-width: 35rem;
+    border: 12px white solid;
+    border-radius: 4rem;
+    overflow: hidden;
+    box-shadow: inset -1px 9px 17px 6px #c5c1c1, -1px 9px 17px 6px #dad4d4; }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    background: linear-gradient(to right, #8838ff, #9241c8);
+    padding: 5rem 2rem 2.5rem 2rem;
+    height: 9rem;
+    position: relative;
+    box-shadow: -1px 4px 20px 6px #e2dddd; }
+    .header::before {
+      content: "";
+      position: absolute;
+      top: -0.8rem;
+      left: 6.4rem;
+      width: 20rem;
+      height: 2.8rem;
+      border-radius: 1.5rem;
+      background-color: white;
+      z-index: 100; }
+    .header img {
+      width: 4rem;
+      border: 3px solid white;
+      border-radius: 50%; }
+    .header .user-details {
+      margin-left: 2rem;
+      color: white; }
+      .header .user-details h2 {
+        font-size: 2rem; }
+      .header .user-details p {
+        opacity: 50%;
+        font-size: 1.5rem; }
+  
+  .messages {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    font-size: 1.3rem; }
+    .messages .user {
+      color: #8838ff; }
+      .messages .user .user-text, .messages .user-left-2 {
+        background-color: #e6dfec;
+        opacity: 1;
+        margin-bottom: 1.5rem;
+        max-width: 65%;
+        border-radius: 2rem;
+        border-bottom-left-radius: 0;
+        padding: 1rem;
+        color: #9241c8; }
+  
+  .reply {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-bottom: 1.5rem; }
+    .reply .images img {
+      width: 7rem;
+      border-radius: 1.5rem;
+      margin-bottom: 1rem; }
+      .reply .images img:not(:last-child) {
+        margin-right: 0.8rem; }
+    .reply-text {
+      background-color: white;
+      padding: 1rem;
+      border-radius: 2rem;
+      border-bottom-right-radius: 0; }
+      .reply-text-1 {
+        margin-bottom: 0.5rem;
+        max-width: 60%; }
+  
+  .offer-thirty-mins, .offer-one-hour {
+    max-width: 80%;
+    background: linear-gradient(to left, #8838ff, #9241c8);
+    border-radius: 1rem;
+    border-bottom-left-radius: 0;
+    padding: 0.5rem 1.5rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 4rem;
+    color: white; }
+    .offer-thirty-mins:not(:last-child), .offer-one-hour:not(:last-child) {
+      margin-bottom: 0.8rem; }
+  
+  .offer div {
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: 1px solid #fff;
+    opacity: 0.5; }
+  
+  .offer p {
+    margin-left: -2rem;
+    opacity: 0.7; }
+    .offer p.hour {
+      margin-left: -4.3rem; }
+  
+  .offer h2 {
+    font-weight: 700;
+    font-size: 2rem; }
+  
+  form {
+    display: inline-flex;
+    margin-top: 1.3rem; }
+    form input,
+    form select,
+    form textarea {
+      font-size: 16px; }
+    form input {
+      width: 100%;
+      padding: 1.5rem 2.5rem;
+      border-radius: 2rem;
+      border: 1px solid #f5f3f7; }
+      form input:focus {
+        outline: none; }
+    form .arrow {
+      font-size: 3rem;
+      color: white;
+      background-color: #3e2753;
+      border-radius: 50%;
+      height: 4rem;
+      width: 4rem;
+      padding: 0 1.2rem;
+      margin-left: -4.3rem;
+      margin-top: 0.27rem;
+      cursor: pointer; }
+  
+  aside {
+    max-width: 80%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 7rem; }
+    aside h2 {
+      color: #3e2753;
+      font-size: 3.5rem;
+      margin-bottom: 2rem;
+      font-weight: 500; }
+    aside p {
+      opacity: 0.4;
+      line-height: 1.5;
+      line-height: 1.7; }
+  
+  @media only screen and (min-width: 850px) {
+    .content-body {
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      align-items: center;
+      gap: 10rem; }
+    aside {
+      max-width: 30%;
+      text-align: initial;
+      margin-bottom: initial; } }
